@@ -1,50 +1,58 @@
-﻿
-# HKAIVERSE × Leanova Assessment
+﻿# HKAIVERSE × Leanova Opex Assessment
 
-## Task 1: College Workflow Improvement
+**Candidate:** Annadata Hemanth  
+**Project:** PlacementHub — Centralized Campus Placement Communication and Application Tracking  
+**Assessment status:** Work in progress
 
-**Project:** PlacementHub — Centralized Campus Placement Communication and Application Tracking
+## Project Overview
 
-The current workflow, as described by the student, involves companies sharing job details and application links with the placement cell. The placement cell distributes these details through email and WhatsApp. Students apply through the provided links, but communication between students and the placement cell is not centralized.
+This repository contains my assessment work exploring a proposed improvement to campus placement communication and application tracking.
 
-This assessment proposes a centralized workflow for publishing opportunities, communicating eligibility criteria, handling student questions, and tracking application status.
+The proposed workflow aims to organize placement opportunities, eligibility information, student notifications, application-status distinctions, exception handling, and auditability.
 
-A company-specific AI resume-matching assistant is considered a possible future extension.
+The work distinguishes between information supplied by the student, proposed design decisions, synthetic test scenarios, and verified evidence.
 
-## Repository Structure
+## Task 1 — Workflow Investigation and Improvement
 
-### Task 1 — Workflow Improvement
-- `task-1-workflow/current-workflow.md` — Current workflow and evidence gaps.
-- `task-1-workflow/proposed-workflow.md` — Proposed improved workflow.
-- `task-1-workflow/report.md` — Assessment report.
-- `task-1-workflow/evidence-log.csv` — Evidence and validation log.
-- `task-1-workflow/test-cases.md` — Five synthetic test cases.
-- `task-1-workflow/test-execution-plan.md` — Test procedure.
-- `task-1-workflow/roi-calculator.csv` — ROI calculator.
-- `task-1-workflow/risk-and-decision-criteria.md` — Risks and decision rules.
+**Current status: Preliminary hypothetical analysis.**
 
-### Task 2 — Curriculum Redesign
-- `task-2-curriculum/README.md` — Reserved for Task 2.
+The initial workflow description is based on the student's existing understanding of placement communications. Permission to investigate the institutional process has not been received, and no direct staff walkthrough, process observation, timing study, or institutional-record review has been conducted.
 
-## Evidence Integrity
+Accordingly, the current workflow is unverified. No actual process measurements, completed test results, or measured time savings are claimed.
 
-The current workflow is based on the student's account and has not been independently verified in this repository. No measured handling times, monthly volumes, rework rates, or executed test outcomes have been provided. These are not presented as established facts.
+Task 1 materials:
 
-The student indicated that permission was handled, but no dated permission or observation record is included here. Add only authorized, non-sensitive evidence.
+- `task-1-workflow/current-workflow.md` — Preliminary workflow hypothesis, limitations, and validation plan.
+- `task-1-workflow/evidence-log.csv` — Evidence classifications, investigation status, and outstanding gaps.
+- `task-1-workflow/proposed-workflow.md` — Proposed future workflow and exception handling.
+- `task-1-workflow/report.md` — Assessment report, limitations, risks, and decision criteria.
+- `task-1-workflow/test-cases.md` — Five synthetic acceptance scenarios.
+- `task-1-workflow/test-execution-plan.md` — Safe testing approach and execution-status tracking.
+- `task-1-workflow/roi-calculator.csv` — Effort and potential time-saving calculation framework.
+- `task-1-workflow/risk-and-decision-criteria.md` — Risks and conditions for proceeding, changing, or stopping.
 
-PlacementHub capabilities are developer-reported and have not been independently verified in this assessment. Opening an external application link does not prove that an application was submitted.
+## Task 2 — Curriculum or Additional Assessment Work
 
-No real student resumes, contact details, private messages, credentials, or confidential company data should be included.
+**Status: Not yet documented in this repository.**
 
-## Completion Checklist
+The Task 2 requirements and deliverables must be added after the assessment instructions are reviewed. No completion is claimed.
 
-- [ ] Validate the current workflow with authorized placement staff.
-- [ ] Record sample size, dates, measurements, and limitations.
-- [ ] Execute the five synthetic tests and document actual outcomes.
-- [ ] Complete the ROI calculation using measured inputs or clearly labelled scenarios.
-- [ ] Complete Task 2.
-- [ ] Add the final release tag and full commit URL.
-- [ ] Confirm reviewer access to the repository.
+## Evidence and Integrity
 
-**Final release:** Pending
-**Final release commit URL:** Pending
+This repository does not claim institutional permission, direct observation, staff confirmation, completed testing, or measured benefits that have not occurred.
+
+Any future investigation must be authorized. If permission is declined, the workflow analysis will remain hypothetical. Synthetic scenarios must remain clearly distinguished from actual test executions.
+
+No confidential student or company information should be committed to this public repository.
+
+## Final Review Checklist
+
+- [ ] Obtain permission before any institutional investigation.
+- [ ] Validate the workflow with an authorized staff member if permitted.
+- [ ] Record actual measurements only when collected.
+- [ ] Execute synthetic tests in a safe test or mock environment and document real results.
+- [ ] Complete the effort calculation using valid inputs.
+- [ ] Complete Task 2 according to the official assessment instructions.
+- [ ] Review all claims, links, files, and repository access before submission.
+
+**This repository is a work in progress.** Its contents must not be interpreted as proof that the proposed workflow has been deployed or validated in the institution.

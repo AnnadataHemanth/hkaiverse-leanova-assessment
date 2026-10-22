@@ -1,5 +1,4 @@
-﻿
-Metric,Value,Unit,Classification,Notes
+﻿Metric,Value,Unit,Classification,Notes
 Monthly requests,,requests/month,Assumption pending validation,Use documented monthly volume or a clearly labelled scenario
 Current handling time,,minutes/request,Assumption pending validation,Exclude separately counted rework
 Current rework rate,,fraction,Assumption pending validation,Enter 0.20 for 20 percent
@@ -11,6 +10,6 @@ Additional exception handling time,,minutes/exception,Assumption pending validat
 Ongoing support effort,,minutes/month,Assumption pending validation,Include troubleshooting and operational support
 One-time implementation effort,,hours,Assumption pending validation,Include setup testing and deployment
 Current monthly effort,"=IF(COUNT(B2:B5)=4,B2*B3+B2*B4*B5,"""")",minutes/month,Calculated,Routine handling plus expected rework
-Proposed monthly effort,"=IF(COUNT(B2,B6:B10)=6,B2*(B6+B7)+B2*B8*B9+B10,"""")",minutes/month,Calculated,Routine handling plus review exceptions and support
+Proposed monthly effort,"=IF(COUNT(B2,B6:B10)=6,B2*(B6+B7)+B2*B8*B9+B10,"""")",minutes/month,Calculated,Routine handling and review plus expected exception effort and monthly support
 Net monthly time saved,"=IF(AND(ISNUMBER(B12),ISNUMBER(B13)),(B12-B13)/60,"""")",hours/month,Calculated,Positive means time saved; negative means added effort
 Simple payback,"=IF(AND(ISNUMBER(B14),B14>0,ISNUMBER(B11)),B11/B14,"""")",months,Calculated,Implementation hours divided by positive monthly hours saved
