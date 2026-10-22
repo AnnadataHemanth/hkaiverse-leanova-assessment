@@ -1,63 +1,105 @@
-# Task 1 — Synthetic Test Plan
+﻿
+# Synthetic Test Cases
 
-## Purpose
+All data in these scenarios is fictional. Expected results are acceptance criteria, not completed test outcomes.
 
-Evaluate whether the proposed placement workflow handles common cases safely. All test data must be artificial. No real student information or live placement activity is needed.
+## TC-01 — Normal Opportunity Flow
 
-**Execution status:** Not yet executed against the application. Expected outcomes below are test criteria, not test results.
+**Setup:** An authorized administrator has a complete, non-duplicate opportunity.
 
-## TC-01 — Normal Placement
+**Steps:**
+1. Prepare the opportunity with job details, eligibility criteria, deadline, and application link.
+2. Publish it through the authorized workflow.
+3. View it as a student.
+4. Open the external application link.
+5. Record the status using the available confirmation mechanism.
 
-**Synthetic input:** A complete placement announcement with valid dates, eligibility criteria, and an application URL.
+**Expected result:**
+- Opportunity details and deadline are visible.
+- The opportunity is shown to the intended audience.
+- A link click is not counted as a confirmed application.
+- Application status is clearly identified.
 
-**Expected outcome:** The authorized administrator can submit the announcement; required information is validated; publication follows the intended approval process; the intended audience can access the announcement.
+**Actual result:** Not executed.
+**Evidence:** Pending.
+**Status:** Pending.
 
-**Evidence to record:** Steps performed, resulting status, validation behavior, and a screenshot or sanitized log if useful.
+## TC-02 — Missing Required Information
 
-## TC-02 — Missing Information
+**Setup:** A synthetic opportunity is missing a required field, such as the deadline or application link.
 
-**Synthetic input:** A placement announcement missing a required field, such as an application deadline.
+**Steps:**
+1. Attempt to publish the opportunity.
+2. Observe the validation response.
+3. Add the missing information and retry.
 
-**Expected outcome:** The system blocks or clearly flags incomplete information before publication, according to its defined rules.
+**Expected result:**
+- Publication is blocked or the missing information is clearly flagged.
+- The required correction is identified.
+- No misleading notification is sent.
 
-**Evidence to record:** Missing field, validation message, resulting status, and whether publication was prevented.
+**Actual result:** Not executed.
+**Evidence:** Pending.
+**Status:** Pending.
 
-## TC-03 — Duplicate Announcement
+## TC-03 — Duplicate Opportunity
 
-**Synthetic input:** Submit the same synthetic placement identifier or equivalent announcement twice.
+**Setup:** A second synthetic record resembles an existing opportunity by company, role, and deadline.
 
-**Expected outcome:** The system detects the duplicate or handles it safely according to documented behavior. It should not silently create unintended duplicate notifications.
+**Steps:**
+1. Create the first opportunity.
+2. Attempt to create the similar record.
+3. Observe whether a duplicate warning appears.
+4. Review the records manually.
 
-**Evidence to record:** Number of records created, notification behavior, and any duplicate warning.
+**Expected result:**
+- A likely duplicate is flagged if that capability exists.
+- No record is silently deleted.
+- If duplicate detection is unavailable, document the limitation.
+
+**Actual result:** Not executed.
+**Evidence:** Pending.
+**Status:** Pending.
 
 ## TC-04 — Unauthorized Action
 
-**Synthetic input:** A test account without administrator permissions attempts to create or modify a placement.
+**Setup:** A test user without publishing permission attempts to publish or edit an opportunity.
 
-**Expected outcome:** The restricted action is denied and protected information is not exposed.
+**Steps:**
+1. Use a safe test environment or mock.
+2. Attempt the restricted action.
+3. Observe the response and any audit record.
 
-**Safety note:** Use only an authorized local test environment and test accounts. Do not probe a live production system without permission.
+**Expected result:**
+- The unauthorized action is denied.
+- No unauthorized change is persisted.
+- An audit event is claimed only if the feature exists and the event is observed.
 
-**Evidence to record:** Account role, attempted action, response, and resulting system state.
+**Actual result:** Not executed.
+**Evidence:** Pending.
+**Status:** Pending.
 
-## TC-05 — Failed Step or Notification
+## TC-05 — Notification or Application-Status Failure
 
-**Synthetic input:** Simulate a failed notification or unavailable application endpoint in a controlled test environment.
+**Setup:** A safe test or mock simulates notification failure, or an external submission cannot be verified.
 
-**Expected outcome:** The failure is visible, the system preserves a safe state, and an appropriate retry or escalation path exists if supported.
+**Steps:**
+1. Trigger the simulated failure.
+2. Observe the status shown to the user.
+3. Try the approved fallback, if available.
+4. Check whether an external-link click is incorrectly treated as a submission.
 
-**Evidence to record:** Failure condition, displayed status, retry behavior, and whether duplicate actions occurred.
+**Expected result:**
+- The failure is visible.
+- A safe fallback or retry path is provided where supported.
+- An unverified submission remains unverified.
 
-## Results Table
+**Actual result:** Not executed.
+**Evidence:** Pending.
+**Status:** Pending.
 
-| Test | Expected outcome | Actual outcome | Status |
-|---|---|---|---|
-| TC-01 | Valid placement handled correctly | Pending execution | Not tested |
-| TC-02 | Incomplete information handled safely | Pending execution | Not tested |
-| TC-03 | Duplicate handled safely | Pending execution | Not tested |
-| TC-04 | Unauthorized action denied | Pending execution | Not tested |
-| TC-05 | Failure handled safely | Pending execution | Not tested |
+## Execution Record
 
-## Acceptance Rule
+For each test, record the date, environment, tester role, steps completed, actual result, Pass/Fail/Blocked/Not Tested status, evidence reference, and any limitation.
 
-Mark a test as passed only after observing its actual result and confirming that it meets the expected outcome. Document failures and limitations rather than changing the recorded outcome to match expectations.
+Do not include credentials or personal data.

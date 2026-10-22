@@ -1,45 +1,50 @@
+﻿
 # HKAIVERSE × Leanova Assessment
 
-This repository contains the assessment deliverables for the HKAIVERSE × Leanova evaluation.
+## Task 1: College Workflow Improvement
 
-## Task 1 — College Workflow Improvement
+**Project:** PlacementHub — Centralized Campus Placement Communication and Application Tracking
 
-**Proposed solution:** PlacementHub, a placement coordination application developed to streamline placement announcements, eligibility information, and student notifications.
+The current workflow, as described by the student, involves companies sharing job details and application links with the placement cell. The placement cell distributes these details through email and WhatsApp. Students apply through the provided links, but communication between students and the placement cell is not centralized.
 
-The assessment evaluates a proposed workflow improvement against a documented baseline. Current-state findings will be based on permitted observations and evidence. If direct access to the college workflow is unavailable, the analysis will explicitly identify hypothetical scenarios and assumptions.
+This assessment proposes a centralized workflow for publishing opportunities, communicating eligibility criteria, handling student questions, and tracking application status.
 
-### Deliverables
+A company-specific AI resume-matching assistant is considered a possible future extension.
 
-- Current-state workflow and stakeholder roles
-- Workflow handoffs, approvals, exceptions, and communication channels
-- Evidence log with dates, sources, sample size, and limitations
-- Proposed improved workflow
-- Five synthetic test scenarios and their recorded results
-- ROI model covering handling, rework, review, support, and implementation effort
-- Risk assessment and criteria for changing or abandoning the proposed approach
+## Repository Structure
 
-## Task 2 — Curriculum Redesign
+### Task 1 — Workflow Improvement
+- `task-1-workflow/current-workflow.md` — Current workflow and evidence gaps.
+- `task-1-workflow/proposed-workflow.md` — Proposed improved workflow.
+- `task-1-workflow/report.md` — Assessment report.
+- `task-1-workflow/evidence-log.csv` — Evidence and validation log.
+- `task-1-workflow/test-cases.md` — Five synthetic test cases.
+- `task-1-workflow/test-execution-plan.md` — Test procedure.
+- `task-1-workflow/roi-calculator.csv` — ROI calculator.
+- `task-1-workflow/risk-and-decision-criteria.md` — Risks and decision rules.
 
-Reserved for the second assessment task.
+### Task 2 — Curriculum Redesign
+- `task-2-curriculum/README.md` — Reserved for Task 2.
 
-## Evidence and Data Integrity
+## Evidence Integrity
 
-Measured facts, estimates, assumptions, and synthetic test data will be distinguished. No confidential student records, personal data, passwords, or API credentials should be committed.
+The current workflow is based on the student's account and has not been independently verified in this repository. No measured handling times, monthly volumes, rework rates, or executed test outcomes have been provided. These are not presented as established facts.
 
-## Submission Status
+The student indicated that permission was handled, but no dated permission or observation record is included here. Add only authorized, non-sensitive evidence.
 
-- [ ] Task 1 investigation and workflow analysis
-- [ ] Evidence log completed
-- [ ] Proposed workflow and prototype evaluation
-- [ ] Five test scenarios executed and documented
-- [ ] ROI and risk analysis completed
-- [ ] Task 1 report reviewed
-- [ ] Task 2 completed
-- [ ] Final GitHub release created
-- [ ] Release URL and full commit URL added here
+PlacementHub capabilities are developer-reported and have not been independently verified in this assessment. Opening an external application link does not prove that an application was submitted.
 
-## Links
+No real student resumes, contact details, private messages, credentials, or confidential company data should be included.
 
-- **PlacementHub source repository:** To be added after publication
-- **Assessment release:** To be added
-- **Final assessment commit:** To be added
+## Completion Checklist
+
+- [ ] Validate the current workflow with authorized placement staff.
+- [ ] Record sample size, dates, measurements, and limitations.
+- [ ] Execute the five synthetic tests and document actual outcomes.
+- [ ] Complete the ROI calculation using measured inputs or clearly labelled scenarios.
+- [ ] Complete Task 2.
+- [ ] Add the final release tag and full commit URL.
+- [ ] Confirm reviewer access to the repository.
+
+**Final release:** Pending
+**Final release commit URL:** Pending

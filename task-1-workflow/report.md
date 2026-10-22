@@ -1,104 +1,104 @@
-# Task 1 — College Workflow Improvement Assessment
 
-## 1. Objective
+# Task 1 Report: Placement Communication and Application Tracking
 
-Investigate a real college workflow, identify avoidable effort and process failures, and evaluate a proposed improvement. The assessment will compare the existing process with the proposed workflow using documented evidence, synthetic tests, and a transparent return-on-investment calculation.
+## 1. Executive Summary
 
-## 2. Workflow Selected
+This assessment examines the campus placement opportunity communication and application-tracking workflow.
 
-**Workflow:** College placement opportunity communication and coordination.
+Based on the student's account, companies share job details and application links with the placement cell, which distributes the information through email and WhatsApp. Students apply through the supplied links, while communication between students and the placement cell is not centralized.
 
-**Proposed solution:** PlacementHub, an existing placement application intended to help administrators communicate opportunities and students access relevant placement information.
+The proposed improvement is a centralized opportunity record with consistent eligibility criteria, deadlines, student notifications, a defined question channel, and clear application-status tracking.
 
-**Scope:** Placement announcements, eligibility information, notifications, application instructions, administrative coordination, and exception handling.
+A company-specific AI resume-matching assistant is proposed as a possible future extension.
 
-The exact scope of the existing application and the current college process must be verified before making comparative claims.
+This assessment is preliminary. No measured processing times, monthly volumes, rework rates, or executed test outcomes have been supplied. Therefore, no numerical time-saving or ROI claim is made.
 
-## 3. Current-State Investigation
+## 2. Problem Statement
 
-Document the current workflow only from permitted observations, interviews, or other legitimate evidence.
+Fragmented announcements and follow-up may make it harder for students to find current opportunity information and for placement staff to maintain a reliable view of questions and application status.
 
-Capture:
-- Trigger for a new placement opportunity
-- Responsible roles and responsibilities
-- Communication channels
-- Handoffs and approvals
-- Eligibility verification
-- Duplicate or incomplete information
-- Failed or missed communications
-- Rework and escalation
-- Typical handling time and monthly volume
+The frequency, effort, and impact of these issues must be established through authorized observations.
 
-If access is declined or unavailable, present this section as a hypothetical walkthrough, clearly identifying all assumptions.
+## 3. Scope
 
-## 4. Evidence and Methodology
+### Included
+- Current workflow mapping.
+- Roles and handoffs.
+- Proposed improved workflow.
+- Five synthetic test cases.
+- ROI calculation model.
+- Risks and decision criteria.
 
-Maintain an evidence log recording dates, methods, workflow steps, evidence sources, classifications, sample size, permission status, and limitations.
+### Excluded
+- Modifications to the existing PlacementHub application.
+- Production deployment or external integrations.
+- Unverified claims about notification delivery or application submissions.
+- Automatic candidate rejection based on an AI score.
+- Use of real student personal data in synthetic tests.
 
-Classify every relevant claim as:
-- **Measured:** Directly recorded or calculated from documented observations
-- **Estimated:** An informed approximation with a stated method
-- **Assumed:** A value used because direct evidence is unavailable
-- **Synthetic:** Artificial data used for testing
+## 4. Evidence and Method
 
-Synthetic test results must not be presented as evidence of actual college performance.
+The current workflow is based on the student's account. This repository currently contains no structured observations, recorded timing observations, or verified process records.
 
-## 5. Baseline Effort and Scale
+The student indicated that permission was handled, but no dated permission or observation record is included here.
 
-Calculate baseline monthly effort from defensible inputs.
+Further validation should record:
+- Observation date and relevant role.
+- Number of cases observed and sampling method.
+- Handling times, where measurement is authorized.
+- Rework cases and reasons.
+- How external application submissions are counted.
+- Exceptions and how they are handled.
+- Limitations and any assumptions.
 
-Include:
-- Monthly number of workflow requests
-- Average handling time per request
-- Rework rate and rework time
-- Administrative coordination effort
-- Evidence of delays or errors, where available
+Measurements, estimates, and assumptions must be clearly distinguished.
 
-If these values cannot be measured, provide a clearly labelled sensitivity analysis rather than claiming measured savings.
+## 5. Current Workflow
 
-## 6. Proposed Workflow
+1. Company shares job details and an application link.
+2. Placement staff distribute the information through email and WhatsApp.
+3. Students review the opportunity and apply through an external link.
+4. Students may need to contact placement staff for clarification.
+5. The method used to confirm actual external submissions and count applications remains unverified.
 
-Evaluate how PlacementHub could improve the documented process. Verify implemented functionality before describing it as an existing capability.
+## 6. Proposed Improvement
 
-Consider required-field validation, eligibility information, authorized publishing, student notifications, duplicate handling, failure recovery, and human approval.
+Use one authoritative opportunity record, consistent eligibility criteria and deadlines, central student visibility, notifications, a defined question channel, and clear application-status categories.
 
-## 7. Testing
+Distinguish link opened, student-confirmed, and verified submitted. An external application should only be called verified when reliable confirmation is available.
 
-Use five synthetic scenarios:
-1. Normal valid workflow
-2. Missing required information
-3. Duplicate placement or event
-4. Unauthorized action
-5. Failed workflow step or notification
+## 7. Test Plan
 
-For each test, document the inputs, steps, expected result, actual result, pass/fail outcome, evidence, and follow-up actions.
+Five synthetic cases are specified:
+1. Normal opportunity flow.
+2. Missing required information.
+3. Duplicate opportunity.
+4. Unauthorized action.
+5. Notification failure or unverified application status.
 
-### Initial Testing Status
+These are planned tests, not completed tests. Actual outcomes must be recorded after execution.
 
-The developer reports that PlacementHub includes administrator functionality, placement announcements, eligibility rules, in-app notifications, unread notification status, application-related functionality and audit-related functionality. These capabilities remain subject to verification.
+## 8. ROI Approach
 
-The five synthetic test scenarios have been designed but have not yet been executed. Therefore, no test is currently reported as passed or failed. The assessment will record actual results only after safe execution in an authorized test environment.
+The calculator estimates current monthly effort as routine handling plus expected rework.
 
-## 8. ROI and Net Time Saved
+Proposed effort includes routine handling, human review, expected exception handling, and ongoing support.
 
-Include baseline handling and rework effort, proposed human review, exception handling, support, and one-time implementation effort.
+Net monthly time saved is converted into hours. Simple payback is calculated by dividing one-time implementation effort by positive monthly hours saved.
 
-Show formulas, units, assumptions, and sensitivity to uncertain inputs. Distinguish gross time saved from net time saved and state the period used for any payback calculation.
+All input cells remain blank pending evidence. Scenario values may be used only when clearly labelled as assumptions. If proposed effort equals or exceeds current effort, report no time saving or added effort.
 
-## 9. Risks and Safeguards
+## 9. Risks and Limitations
 
-Assess privacy, access control, incorrect eligibility decisions, duplicate notifications, notification failures, inaccurate placement information, system availability, and operational support.
+- The current workflow has not been independently observed in this repository.
+- The external application-counting method remains unknown.
+- No quantitative baseline or executed test result is available.
+- PlacementHub capabilities are developer-reported and not independently verified here.
+- AI resume matching may produce inaccurate or biased scores.
+- Resume processing requires appropriate consent, access restrictions, and data-retention controls.
 
-Define mitigation measures and the conditions that would trigger a redesign or abandonment.
+## 10. Conclusion
 
-## 10. Decision Criteria
+Centralizing placement communication and application tracking is a plausible workflow improvement. Its benefits must be demonstrated rather than assumed.
 
-Specify measurable criteria for continuing, changing, piloting, or abandoning the proposed workflow. Base the criteria on operational evidence, user needs, reliability, and net benefit.
-
-## 11. Limitations
-
-Describe access constraints, sample size, missing measurements, assumptions, testing limitations, and any functionality that has not been verified.
-
-## 12. Conclusion
-
-Complete this section after gathering evidence and testing the proposed workflow. State what the evidence supports, what remains uncertain, and what should happen next.
+The next steps are to validate the process, record a small authorized sample, execute the synthetic tests, and calculate ROI using supported inputs before recommending a wider pilot.
