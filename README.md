@@ -1,4 +1,4 @@
-﻿# HKAIVERSE × Leanova Assessment
+﻿# HKAIVERSE × Leanova Opex Assessment
 
 ### AI Engineering • Workflow Automation • Curriculum Innovation
 
